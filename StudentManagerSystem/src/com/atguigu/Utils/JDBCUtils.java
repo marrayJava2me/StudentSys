@@ -1,6 +1,6 @@
 package com.atguigu.Utils;
 
-
+//wudi
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -28,7 +28,7 @@ public class JDBCUtils {
 		driverName =pro.getProperty("driverName");
 		user =pro.getProperty("user");
 		password =pro.getProperty("password");
-		//加载驱动
+		//鍔犺浇椹卞姩
 		try {
 			Class.forName(driverName);
 		} catch (ClassNotFoundException e) {
@@ -37,7 +37,7 @@ public class JDBCUtils {
 		
 	}
 	/**
-	 * 获取连接
+	 * 鑾峰彇杩炴帴
 	 * @return
 	 * @throws Exception
 	 */
@@ -45,7 +45,7 @@ public class JDBCUtils {
 		return DriverManager.getConnection(url, user, password);
 	}
 	/**
-	 * 关闭连接
+	 * 鍏抽棴杩炴帴
 	 * @return
 	 * @throws Exception
 	 */
